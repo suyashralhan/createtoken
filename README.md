@@ -1,0 +1,8 @@
+# createtoken
+This code defines a contract called "MyToken" that represents a basic token on the Ethereum blockchain. 
+tokenName is a string variable that represents the name of the token and is set to "META" in this example.
+tokenAbbrv is a string variable that represents an abbreviation or symbol for the token and is set to "MTA" in this example.
+totalSupply is an unsigned integer variable that represents the total supply of tokens. It is initialized to 0.
+A line declares a mapping variable named balances. The mapping associates an Ethereum address (address) with an unsigned integer (uint), representing the balance of tokens held by each address. By declaring it as public, a getter function is automatically generated to allow external access to this mapping.
+The mint function is a public function that allows new tokens to be created and assigned to a specified address. It takes two parameters: _address (the address to which tokens will be assigned) and _value (the number of tokens to be created). Inside the function, the total supply of tokens is increased by the specified value, and the balance of the given address is also increased by the same value.
+The burn function is a public function that allows tokens to be destroyed (or "burned") from a specified address. It takes two parameters: _address (the address from which tokens will be burned) and _value (the number of tokens to be burned). Inside the function, it checks if the balance of the given address is greater than or equal to the specified value. If it is, it subtracts the specified value from both the total supply and the balance of the address.
