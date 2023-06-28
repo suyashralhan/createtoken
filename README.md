@@ -36,7 +36,7 @@ In the Remix IDE, navigate to the "Deploy & Run Transactions" section. Select th
 Interact with the Smart Contract:
 In the Remix IDE, navigate to the "Deployed Contracts" section. Select the deployed "MyToken" contract from the list. We will see the contract's public variables (tokenName, tokenAbbrv, totalSupply) and the "balances" mapping. To interact with the contract, you can use the provided functions: To mint new tokens, call the "mint" function and provide an address and the amount to mint as parameters. To burn tokens, call the "burn" function and provide an address and the amount to burn as parameters. After executing a function, you can check the updated state variables and balances.
 
-## Code block
+## Code block:
 function mint (address _address, uint _value) public
 {
     totalSupply += _value;
